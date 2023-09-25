@@ -1,0 +1,5 @@
+# Игнорировать файлы Visual Studio
+.vs/
+
+# Игнорировать файлы, созданные Visual Studio Code
+.vscode/
