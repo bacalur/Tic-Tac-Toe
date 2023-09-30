@@ -4,7 +4,7 @@ class board {
 
 public:
         board(); // Конструктор, инициализирующий игровое поле
-	void DoMove(coordinate);  // Функция для совершения хода
+	void DoMove(Coordinate);  // Функция для совершения хода
 
 	friend class engine;
 
