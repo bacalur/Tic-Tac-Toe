@@ -1,7 +1,7 @@
 #include "engine.h"
 
 engine::engine() {          // Конструктор
-
+ // Инициализация игровой доски в конструкторе
 }
  
 void engine::run()          // Функция run() класса "engine"
