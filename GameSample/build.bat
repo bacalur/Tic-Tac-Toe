@@ -2,7 +2,7 @@
 rem Сборка проекта
 
 rem Путь к компилятору g++
-set GPP=D:\bin\g++
+set GPP=D:\libexec\mingw-get
 
 rem Исходные файлы проекта
 set SOURCES=board.cpp coordinate.cpp engine.cpp player.cpp
