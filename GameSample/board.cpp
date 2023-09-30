@@ -1,5 +1,5 @@
 #include "board.h"
-#include "Coordinate.h"
+#include "coordinate.h"
 
 board::board(){            // конструктор
 }
