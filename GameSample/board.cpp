@@ -8,3 +8,8 @@ board::board(){            // конструктор
             gameBoard[i][j] = ' ';
 }
 
+void board::DoMove(coordinate coord, char playerSymbol) {
+    // Проверка на корректность координат и свободность клетки
+    if (coord.x >= 0 && coord.x < 3 && coord.y >= 0 && coord.y < 3 && gameBoard[coord.x][coord.y] == ' ') {
+        gameBoard[coord.x][coord.y] = playerSymbol;
+    }
