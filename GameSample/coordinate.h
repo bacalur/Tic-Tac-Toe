@@ -6,4 +6,6 @@ public:
     int y; // Координата по вертикали
 
     Coordinate(int xCoord, int yCoord) : x(xCoord), y(yCoord) {}    // Конструктор "Coordinate" со значениями x и y
+
+    Coordinate() = default;
 };
