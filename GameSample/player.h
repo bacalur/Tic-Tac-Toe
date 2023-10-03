@@ -6,5 +6,5 @@
 class Player {
 
 public:
-	coordinate Move(board);    // Функция Move(board)
+	Coordinate Move(const Board&, char);    // Функция Move(board)
 };
