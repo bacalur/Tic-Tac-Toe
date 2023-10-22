@@ -13,5 +13,16 @@ public:
     return (x == other.x) && (y == other.y);
     }
 
+    // Операторы ввода и вывода
+    friend std::ostream& operator<<(std::ostream& os, const Coordinate& coord) {
+    os << "(" << coord.x << ", " << coord.y << ")";
+    return os;
+    }
+
+    friend std::istream& operator>>(std::istream& is, Coordinate& coord) {
+    is >> coord.x >> coord.y;
+    return is;
+    }
+
     Coordinate() = default;
 };
