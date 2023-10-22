@@ -20,6 +20,8 @@ public:
 	    return os;
 	}
 
+        Player(const Player& other) : symbol(other.symbol) {}
+
 friend std::istream& operator>>(std::istream& is, Player& player) {
     is >> player.symbol;
     return is;
