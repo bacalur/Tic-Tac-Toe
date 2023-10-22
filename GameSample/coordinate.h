@@ -9,5 +9,9 @@ public:
     
     Coordinate(const Coordinate& other) : x(other.x), y(other.y) {}    // Oператор копирования
 
+    bool operator==(const Coordinate& other) const {    // Оператор сравненния
+    return (x == other.x) && (y == other.y);
+    }
+
     Coordinate() = default;
 };
