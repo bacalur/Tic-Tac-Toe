@@ -35,8 +35,40 @@ void engine::run()          // Функция run() класса "engine"
 bool engine::gameOver() const       // Функция gameOver() класса "engine"
 {
     // Проверка на победу	
+    for (int i = 0; i < 3; i++) {
+        if (board_.GetSymbol(Coordinate(i, 0)) == board_.GetSymbol(Coordinate(i, 1)) &&
+            board_.GetSymbol(Coordinate(i, 1)) == board_.GetSymbol(Coordinate(i, 2)) &&
+            board_.GetSymbol(Coordinate(i, 0)) != ' ') {
+            return true;
+        }
+        if (board_.GetSymbol(Coordinate(0, i)) == board_.GetSymbol(Coordinate(1, i)) &&
+            board_.GetSymbol(Coordinate(1, i)) == board_.GetSymbol(Coordinate(2, i)) &&
+            board_.GetSymbol(Coordinate(0, i)) != ' ') {
+            return true;
+        }
+    }
 
+    if (board_.GetSymbol(Coordinate(0, 0)) == board_.GetSymbol(Coordinate(1, 1)) &&
+        board_.GetSymbol(Coordinate(1, 1)) == board_.GetSymbol(Coordinate(2, 2)) &&
+        board_.GetSymbol(Coordinate(0, 0)) != ' ') {
+        return true;
+    }
+
+    if (board_.GetSymbol(Coordinate(0, 2)) == board_.GetSymbol(Coordinate(1, 1)) &&
+        board_.GetSymbol(Coordinate(1, 1)) == board_.GetSymbol(Coordinate(2, 0)) &&
+        board_.GetSymbol(Coordinate(0, 2)) != ' ') {
+        return true;
+    }
+	
     // Проверка на ничью
+
+        for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (board_.GetSymbol(Coordinate(i, j)) == ' ') {
+                return false; // Есть пустая клетка, игра продолжается
+            }
+        }
+    }
 	
     return false;   // Игра продолжается
 }
