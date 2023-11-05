@@ -11,9 +11,7 @@ public:
 	Player(const Player& other) : symbol(other.symbol) {}   // Оператор копирования
 
 	// Операторы ввода и вывода
-	bool operator==(const Player& other) const {    // Оператор сравнения
-	    return symbol == other.symbol;
-	}
+	bool operator==(const Player& other) const {}    // Оператор сравнения
 
 	friend std::ostream& operator<<(std::ostream& os, const Player& player) {
 	    os << "Player: " << player.symbol;
@@ -22,10 +20,10 @@ public:
 
         Player(const Player& other) : symbol(other.symbol) {}
 
-friend std::istream& operator>>(std::istream& is, Player& player) {
-    is >> player.symbol;
-    return is;
-}
+        friend std::istream& operator>>(std::istream& is, Player& player) {
+        is >> player.symbol;
+        return is;
+        }
 
 
 
