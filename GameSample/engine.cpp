@@ -2,7 +2,9 @@
 #include <iostream>
 
 engine::engine() {          // Конструктор
- // Инициализация игровой доски в конструкторе
+    board_ = Board();       // Создание объекта доски
+    xPlayer = Player('X');  // Создание игрока X
+    oPlayer = Player('O');  // Создание игрока O
 }
  
 void engine::run()          // Функция run() класса "engine"
@@ -15,10 +17,14 @@ void engine::run()          // Функция run() класса "engine"
 		if (xMove) {      // Ходит ли игрок X
 			std::cout << "Ход игрока X:" << std::endl;
 			move = xPlayer.Move(board_, currentPlayerSymbol);
+			// Coordinate move = xPlayer.Move(board_, currentPlayerSymbol);
+                        // board_.DoMove(move, currentPlayerSymbol); // Запись хода игрока (X/O) на доску
 		}
 		else {
 			std::cout << "Ход игрока O:" << std::endl;
                         move = oPlayer.Move(board_, currentPlayerSymbol);
+			// Coordinate move = oPlayer.Move(board_, currentPlayerSymbol);
+                        // board_.DoMove(move, currentPlayerSymbol);
 		}
 		xMove = !xMove;
 		board_.DoMove(move, currentPlayerSymbol);       // Запись хода игрока(X/O) на доску
