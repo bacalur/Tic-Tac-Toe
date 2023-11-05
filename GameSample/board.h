@@ -4,8 +4,19 @@
 class Board {
 
 public:
-	Board(); // Конструктор, инициализирующий игровое поле
-	void DoMove(Coordinate, char);  // Функция для совершения хода
+	Board(); // Конструктор, инициализирующий игровое поле (по умолчанию)
+
+        Board(const Board& other);    // Конструктор копирования
+
+        Board& operator=(const Board& other);    // Оператор копирования
+
+        bool operator==(const Board& other) const;    // Оператор сравнения
+
+        friend std::istream& operator>>(std::istream& is, Board& board);   // Оператор ввода
+
+        friend std::ostream& operator<<(std::ostream& os, const Board& board);   // Оператор вывода
+
+	void DoMove(Coordinate, char);   // Функция для совершения хода
 
 	friend class engine;
 
