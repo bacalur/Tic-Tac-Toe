@@ -10,3 +10,9 @@ Coordinate Player::Move(const Board& gameBoard, char playerSymbol) {    // Фу�
     } while (gameBoard.GetSymbol(Coordinate(x,y)) != ' ');
     return Coordinate(x, y);
 }
+
+bool Player::operator==(const Player& other) const {     // Оператор сравнения
+    return symbol == other.symbol;
+}
+
+
