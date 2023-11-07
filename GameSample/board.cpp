@@ -1,7 +1,9 @@
 #include "board.h"
 #include "coordinate.h"
+#include <algorithm>
 
-Board::Board() {            // конструктор по умолчанию
+/*
+	Board::Board() {            // конструктор по умолчанию
 	// Инициализация игрового поля пробелами - пустыми клетками
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
@@ -9,7 +11,14 @@ Board::Board() {            // конструктор по умолчанию
 		}
 	}
 }
+*/
 
+Board::Board() {
+    // Инициализация игрового поля пробелами - пустыми клетками
+    gameBoard = std::vector<std::vector<char>>(3, std::vector<char>(3, ' '));
+}
+
+/*
 Board::Board(const Board& other) {
     // Конструктор копирования
     for (int i = 0; i < 3; i++) {
@@ -17,9 +26,15 @@ Board::Board(const Board& other) {
             gameBoard[i][j] = other.gameBoard[i][j];
         }
     }
+}*/
+
+Board::Board(const Board& other) {
+    gameBoard = other.gameBoard;
 }
 
-Board& Board::operator=(const Board& other) {
+
+
+/*Board& Board::operator=(const Board& other) {
     // Оператор копирования
     if (this != &other) {
         for (int i = 0; i < 3; i++) {
@@ -29,9 +44,17 @@ Board& Board::operator=(const Board& other) {
         }
     }
     return *this;
+}*/
+
+Board& Board::operator=(const Board& other) {
+    if (this != &other) {
+        gameBoard = other.gameBoard;
+    }
+    return *this;
 }
 
-bool Board::operator==(const Board& other) const {
+/*
+	bool Board::operator==(const Board& other) const {
     // Оператор сравнения
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -41,10 +64,24 @@ bool Board::operator==(const Board& other) const {
         }
     }
     return true;
+}*/
+
+bool Board::operator==(const Board& other) const {
+    return gameBoard == other.gameBoard;
 }
 
-std::istream& operator>>(std::istream& is, Board& board) {
+/*
+	std::istream& operator>>(std::istream& is, Board& board) {
     // Оператор ввода
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            is >> board.gameBoard[i][j];
+        }
+    }
+    return is;
+}*/
+
+std::istream& operator>>(std::istream& is, Board& board) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             is >> board.gameBoard[i][j];
@@ -53,7 +90,8 @@ std::istream& operator>>(std::istream& is, Board& board) {
     return is;
 }
 
-std::ostream& operator<<(std::ostream& os, const Board& board) {
+/*
+	std::ostream& operator<<(std::ostream& os, const Board& board) {
     // Оператор вывода
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -62,7 +100,19 @@ std::ostream& operator<<(std::ostream& os, const Board& board) {
         os << '\n';
     }
     return os;
+}*/
+
+std::ostream& operator<<(std::ostream& os, const Board& board) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            os << board.gameBoard[i][j] << ' ';
+        }
+        os << '\n';
+    }
+    return os;
 }
+
+
 
 void Board::DoMove(Coordinate coord, char playerSymbol) {
 	// Проверка на корректность координат и свободность клетки
