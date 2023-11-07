@@ -1,5 +1,7 @@
 #include "engine.h"
 #include <iostream>
+#include <algorithm>
+#include <random>
 
 engine::engine() {          // Конструктор
     board_ = Board();       // Создание объекта доски
@@ -14,6 +16,8 @@ void engine::run()          // Функция run() класса "engine"
 	char currentPlayerSymbol = 'X';       // Начинает игрок с крестиками
 	
 	while (!gameOver()) {       
+		Coordinate move; 
+		
 		if (xMove) {      // Ходит ли игрок X
 			std::cout << "Ход игрока X:" << std::endl;
 			move = xPlayer.Move(board_, currentPlayerSymbol);
@@ -62,13 +66,17 @@ bool engine::gameOver() const       // Функция gameOver() класса "e
 	
     // Проверка на ничью
 
-        for (int i = 0; i < 3; i++) {
+	return std::all_of(board_.gameBoard.begin(), board_.gameBoard.end(), [](const std::vector<char>& row) {
+        return std::none_of(row.begin(), row.end(), [](char symbol) { return symbol == ' '; });
+    });
+
+   /*     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             if (board_.GetSymbol(Coordinate(i, j)) == ' ') {
                 return false; // Есть пустая клетка, игра продолжается
             }
         }
     }
-	
     return false;   // Игра продолжается
+    */
 }
