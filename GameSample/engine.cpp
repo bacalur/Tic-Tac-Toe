@@ -80,3 +80,13 @@ bool engine::gameOver() const       // Функция gameOver() класса "e
     return false;   // Игра продолжается
     */
 }
+
+std::string engine::getBoard() const {
+    std::ostringstream os;
+    os << board_;
+    return os.str();
+}
+
+void engine::reset() {
+    board_ = Board();
+}
