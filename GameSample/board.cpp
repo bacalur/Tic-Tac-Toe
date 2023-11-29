@@ -1,6 +1,7 @@
 #include "board.h"
 #include "coordinate.h"
 #include <algorithm>
+#include <vector>
 
 /*
 	Board::Board() {            // конструктор по умолчанию

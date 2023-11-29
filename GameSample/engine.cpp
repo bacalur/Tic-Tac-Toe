@@ -1,7 +1,9 @@
 #include "engine.h"
+#include "board.h"
 #include <iostream>
 #include <algorithm>
 #include <random>
+#include <sstream>
 
 engine::engine() {          // Конструктор
     board_ = Board();       // Создание объекта доски
