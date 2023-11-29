@@ -124,3 +124,28 @@ void Board::DoMove(Coordinate coord, char playerSymbol) {
 char Board::GetSymbol(Coordinate x) const {
 	return gameBoard[x.x][x.y];
 }
+
+//std::string Board::getBoard() const {
+//    std::string result;
+//    for (int i = 0; i < 3; ++i) {
+//        for (int j = 0; j < 3; ++j) {
+//            result += gameBoard[i][j];
+//            if (j < 2) {
+//                result += ' ';
+//            }
+//        }
+//        if (i < 2) {
+//            result += '\n';
+//        }
+//    }
+//    return result;
+//}
+//
+//void Board::reset() {
+//    // Очистка доски, инициализация пробелами
+//    for (int i = 0; i < 3; ++i) {
+//        for (int j = 0; j < 3; ++j) {
+//            gameBoard[i][j] = ' ';
+//        }
+//    }
+//}
