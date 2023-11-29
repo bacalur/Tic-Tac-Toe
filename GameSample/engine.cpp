@@ -39,8 +39,7 @@ void engine::run()          // Функция run() класса "engine"
 	}
 }
 
-bool engine::gameOver() const       // Функция gameOver() класса "engine"
-{
+bool engine::gameOver() const {
     // Проверка на победу	
     for (int i = 0; i < 3; i++) {
         if (board_.GetSymbol(Coordinate(i, 0)) == board_.GetSymbol(Coordinate(i, 1)) &&
@@ -66,23 +65,59 @@ bool engine::gameOver() const       // Функция gameOver() класса "e
         board_.GetSymbol(Coordinate(0, 2)) != ' ') {
         return true;
     }
-	
+
     // Проверка на ничью
-
-	return std::all_of(board_.gameBoard.begin(), board_.gameBoard.end(), [](const std::vector<char>& row) {
-        return std::none_of(row.begin(), row.end(), [](char symbol) { return symbol == ' '; });
-    });
-
-   /*     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            if (board_.GetSymbol(Coordinate(i, j)) == ' ') {
-                return false; // Есть пустая клетка, игра продолжается
-            }
+    for (int i = 0; i < 3; i++) {
+        if (std::all_of(board_.gameBoard[i], board_.gameBoard[i] + 3, [](char symbol) { return symbol != ' '; })) {
+            return false; // Есть пустая клетка, игра продолжается
         }
     }
-    return false;   // Игра продолжается
-    */
+    return true;   // Все клетки заполнены, но нет победителя, игра завершена
 }
+//bool engine::gameOver() const       // Функция gameOver() класса "engine"
+//{
+//    // Проверка на победу	
+//    for (int i = 0; i < 3; i++) {
+//        if (board_.GetSymbol(Coordinate(i, 0)) == board_.GetSymbol(Coordinate(i, 1)) &&
+//            board_.GetSymbol(Coordinate(i, 1)) == board_.GetSymbol(Coordinate(i, 2)) &&
+//            board_.GetSymbol(Coordinate(i, 0)) != ' ') {
+//            return true;
+//        }
+//        if (board_.GetSymbol(Coordinate(0, i)) == board_.GetSymbol(Coordinate(1, i)) &&
+//            board_.GetSymbol(Coordinate(1, i)) == board_.GetSymbol(Coordinate(2, i)) &&
+//            board_.GetSymbol(Coordinate(0, i)) != ' ') {
+//            return true;
+//        }
+//    }
+//
+//    if (board_.GetSymbol(Coordinate(0, 0)) == board_.GetSymbol(Coordinate(1, 1)) &&
+//        board_.GetSymbol(Coordinate(1, 1)) == board_.GetSymbol(Coordinate(2, 2)) &&
+//        board_.GetSymbol(Coordinate(0, 0)) != ' ') {
+//        return true;
+//    }
+//
+//    if (board_.GetSymbol(Coordinate(0, 2)) == board_.GetSymbol(Coordinate(1, 1)) &&
+//        board_.GetSymbol(Coordinate(1, 1)) == board_.GetSymbol(Coordinate(2, 0)) &&
+//        board_.GetSymbol(Coordinate(0, 2)) != ' ') {
+//        return true;
+//    }
+//	
+//    // Проверка на ничью
+//
+//	return std::all_of(board_.gameBoard.begin(), board_.gameBoard.end(), [](const std::vector<char>& row) {
+//        return std::none_of(row.begin(), row.end(), [](char symbol) { return symbol == ' '; });
+//    });
+//
+//   /*     for (int i = 0; i < 3; i++) {
+//        for (int j = 0; j < 3; j++) {
+//            if (board_.GetSymbol(Coordinate(i, j)) == ' ') {
+//                return false; // Есть пустая клетка, игра продолжается
+//            }
+//        }
+//    }
+//    return false;   // Игра продолжается
+//    */
+//}
 
 std::string engine::getBoard() const {
     std::ostringstream os;

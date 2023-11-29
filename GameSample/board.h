@@ -74,6 +74,8 @@ public:
      */
     char GetSymbol(Coordinate x) const;
 
+    void SetSymbol(const Coordinate& coord, char symbol);
+
 private:
 	char gameBoard[3][3];
     ///< Массив, представляющий игровое поле 3x3.

@@ -1,9 +1,2 @@
 ﻿  board.cpp
 C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(19,15): error C3863: тип массива "char [3][3]" является неназначаемым
-  engine.cpp
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,38): error C2228: выражение слева от ".begin" должно представлять класс, структуру или объединение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,38): message : тип: const char [3][3]
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,14): error C2672: "std::all_of": не найдена соответствующая перегруженная функция
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(1110,30): message : может быть "bool std::all_of(_InIt,_InIt,_Pr)"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,14): message : "bool std::all_of(_InIt,_InIt,_Pr)": ожидаются аргументы 3 — 2 предоставлены
-  Создание кода...

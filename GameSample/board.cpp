@@ -159,3 +159,7 @@ char Board::GetSymbol(Coordinate x) const {
 //        }
 //    }
 //}
+
+void Board::SetSymbol(const Coordinate& coord, char symbol) {
+    gameBoard[coord.x][coord.y] = symbol;
+}
