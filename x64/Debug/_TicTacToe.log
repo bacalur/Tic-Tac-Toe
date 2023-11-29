@@ -1,25 +1,9 @@
 ﻿  board.cpp
 C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(19,15): error C3863: тип массива "char [3][3]" является неназначаемым
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(33,15): error C3863: тип массива "char [3][3]" является неназначаемым
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(52,19): error C3863: тип массива "char [3][3]" является неназначаемым
   engine.cpp
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(8,18): error C2512: Player: нет подходящего конструктора по умолчанию
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(71,17): error C2672: "std::all_of": не найдена соответствующая перегруженная функция
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,38): error C2228: выражение слева от ".begin" должно представлять класс, структуру или объединение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,38): message : тип: const char [3][3]
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,14): error C2672: "std::all_of": не найдена соответствующая перегруженная функция
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(1110,30): message : может быть "bool std::all_of(_InIt,_InIt,_Pr)"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(71,17): message : "bool std::all_of(_InIt,_InIt,_Pr)": ожидаются аргументы 3 — 2 предоставлены
-  main.cpp
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
-  player.cpp
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(72,14): message : "bool std::all_of(_InIt,_InIt,_Pr)": ожидаются аргументы 3 — 2 предоставлены
   Создание кода...

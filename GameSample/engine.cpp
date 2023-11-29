@@ -1,5 +1,6 @@
 #include "engine.h"
 #include "board.h"
+
 #include <iostream>
 #include <algorithm>
 #include <random>
@@ -68,9 +69,9 @@ bool engine::gameOver() const       // Функция gameOver() класса "e
 	
     // Проверка на ничью
 
-    return std::all_of(board_.gameBoard.begin(), board_.gameBoard.end(), [](const std::vector<char>& row) {
+	return std::all_of(board_.gameBoard.begin(), board_.gameBoard.end(), [](const std::vector<char>& row) {
         return std::none_of(row.begin(), row.end(), [](char symbol) { return symbol == ' '; });
-        });
+    });
 
    /*     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {

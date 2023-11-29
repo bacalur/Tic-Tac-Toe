@@ -21,6 +21,8 @@ class Player {
 
 public:
 
+	Player() : symbol(' ') {}
+
 	/**
 	 * \brief Конструктор для создания объекта игрока с заданным символом.
 	 * \param symbol - Символ игрока (X или O).
@@ -31,9 +33,7 @@ public:
 	* \brief Конструктор копирования для создания копии игрока.
 	* \param other - Ссылка на объект, который нужно скопировать.
 	*/
-	Player(const Player& other) : symbol(other.symbol) {
-		 return symbol == other.symbol;
-	}
+	Player(const Player& other) : symbol(other.symbol) {}
 
 	/**
 	 * \brief Оператор сравнения для проверки равенства двух игроков.

@@ -30,7 +30,11 @@ Board::Board(const Board& other) {
 }*/
 
 Board::Board(const Board& other) {
-    gameBoard = other.gameBoard;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            gameBoard[i][j] = other.gameBoard[i][j];
+        }
+    }
 }
 
 
@@ -49,7 +53,12 @@ Board::Board(const Board& other) {
 
 Board& Board::operator=(const Board& other) {
     if (this != &other) {
-        gameBoard = other.gameBoard;
+        //gameBoard = other.gameBoard;
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                gameBoard[i][j] = other.gameBoard[i][j];
+            }
+        }
     }
     return *this;
 }
