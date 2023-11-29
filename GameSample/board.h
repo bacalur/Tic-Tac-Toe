@@ -12,7 +12,7 @@ public:
 
         bool operator==(const Board& other) const;    // Оператор сравнения
 
-        friend std::istream& operator>>(std::istream& is, Board& board);    // Оператор ввода
+        friend std::istream& operator>>(std::istream& is, Board& board);   // Оператор ввода
 
         friend std::ostream& operator<<(std::ostream& os, const Board& board);   // Оператор вывода
 
