@@ -46,7 +46,10 @@ public:
     void reset();
 
 private:
-    Board board_;    ///< Доска
-    Player xPlayer;  ///< Игрок X 
-    Player oPlayer;  ///< Игрок O
+    Board board_;
+    ///< Доска
+    Player xPlayer;
+    ///< Игрок X 
+    Player oPlayer;
+    ///< Игрок O
 };
