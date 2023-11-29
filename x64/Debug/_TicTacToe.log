@@ -1,2 +1,7 @@
 ﻿  board.cpp
-C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(19,15): error C3863: тип массива "char [3][3]" является неназначаемым
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\TicTacToe\Tic-Tac-Toe\gamesample\board.cpp(19,15): error C3863: тип массива "char [3][3]" является неназначаемым
+  coordinate.cpp
+  engine.cpp
+  main.cpp
+  player.cpp
+  Создание кода...
