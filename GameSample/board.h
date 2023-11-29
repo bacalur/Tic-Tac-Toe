@@ -75,7 +75,6 @@ public:
 	char GetSymbol(Coordinate x) const;
 }
 
-
 private:
 	char gameBoard[3][3];
     ///< Массив, представляющий игровое поле 3x3.

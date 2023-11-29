@@ -1,0 +1,69 @@
+﻿  board.cpp
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,1): error C2059: синтаксическая ошибка: private
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,8): error C2059: синтаксическая ошибка: :
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2059: синтаксическая ошибка: }
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,22): error C2039: "vector": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(76,1): message : см. объявление "std"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,28): error C2065: vector: необъявленный идентификатор
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,34): error C2039: "vector": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(76,1): message : см. объявление "std"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,40): error C2065: vector: необъявленный идентификатор
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,41): error C2062: тип "char" не требуется
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(18,56): error C2039: "vector": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(76,1): message : см. объявление "std"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(32,23): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(51,27): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(70,31): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(87,25): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.cpp(108,25): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+  coordinate.cpp
+  engine.cpp
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,1): error C2059: синтаксическая ошибка: private
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,8): error C2059: синтаксическая ошибка: :
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2059: синтаксическая ошибка: }
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(6,18): error C2512: Player: нет подходящего конструктора по умолчанию
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(69,28): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(69,54): error C2039: "gameBoard": не является членом "Board".
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(16,7): message : см. объявление "Board"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(69,14): error C2672: "std::all_of": не найдена соответствующая перегруженная функция
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\algorithm(1110,30): message : может быть "bool std::all_of(_InIt,_InIt,_Pr)"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(69,14): message : "bool std::all_of(_InIt,_InIt,_Pr)": ожидаются аргументы 3 — 2 предоставлены
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(85,24): error C2079: "os" использует не имеющую определения структуру class "std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(86,5): error C2678: бинарный "<<": не найден оператор, принимающий левый операнд типа "int" (или приемлемое преобразование отсутствует)
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(59,30): message : может быть "std::ostream &operator <<(std::ostream &,const Board &)"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\coordinate.h(49,26): message : или       "std::ostream &operator <<(std::ostream &,const Coordinate &)"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\engine.cpp(86,5): message : при попытке сопоставить список аргументов "(int, const Board)"
+  main.cpp
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,1): error C2059: синтаксическая ошибка: private
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,8): error C2059: синтаксическая ошибка: :
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2059: синтаксическая ошибка: }
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\main.cpp(8,5): error C2065: board: необъявленный идентификатор
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\main.cpp(8,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "gameBoard"
+  player.cpp
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,1): error C2059: синтаксическая ошибка: private
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(78,8): error C2059: синтаксическая ошибка: :
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2059: синтаксическая ошибка: }
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\board.h(81,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2534: Player: конструктор не может возвращать значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(20,7): message : см. объявление "Player"
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(35,4): error C2562: Player::Player: функция типа "void", возвращающая значение
+C:\Users\Lenovo\Desktop\USM\2 курс\3 семестр\C++\Tic-Tac-Toe\gamesample\player.h(34,2): message : см. объявление "Player::Player"
+  Создание кода...
