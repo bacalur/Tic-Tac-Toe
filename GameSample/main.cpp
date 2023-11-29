@@ -5,7 +5,7 @@
 
 int main() {
     // Создаю объекты
-    board gameBoard;
+    Board gameBoard;
     engine gameEngine;
     Player xPlayer('X');
     Player oPlayer('O');
